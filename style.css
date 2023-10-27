@@ -1,0 +1,96 @@
+body {
+    background-color: #3A3A3A;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'SevenSegment';
+    src: url('./assets/Seven Segment.ttf') format('truetype');
+}
+
+/*Classes*/
+.scores {
+    position: fixed;
+    width: 25%;
+    height: 50%;
+    top: 35%;
+    font-family: 'SevenSegment';
+    font-size: 20vw;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border-radius: 15px;
+    color: white;
+}
+.title {
+    position: fixed;
+    top: 5%;
+    height: 20%;
+    display: inline-block;
+    width: 25%;
+    font-size: 7vw;
+    text-align: center;
+}
+.menuBtns {
+    border: none;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    aspect-ratio: 1/1;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+.scrn {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+/*Id*/
+#homeScore {
+    left: 10%;
+    background-color: #2195f3;
+}
+#awayScore {
+    right: 10%;
+    background-color: #F44236;
+}
+#menuHolder {
+    position: fixed;
+    width: 30%;
+    left: 35%;
+    top: 55%;
+    height: 10%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+#msg {
+    position: fixed;
+    width: 95%;
+    left: 2.5%;
+    background-color: rgba(0, 0, 0, 0.75);
+    bottom: -10%;
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+    border-radius: 15px;
+    animation-duration: 3s;
+    animation-play-state: unset;
+}
+
+/*Animations*/
+@keyframes msg {
+    0% {bottom: -10%; opacity: 0%;}
+    25% {bottom: 5%; opacity: 100%;}
+    75% {bottom: 5%; opacity: 100%;}
+    100% {bottom: -10%; opacity: 0%;}
+}

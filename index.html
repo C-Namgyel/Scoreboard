@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Scoreboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="scrn" id="mainScrn">
+            <div id="homeScore" class="scores" val="home">--</div>
+            <div id="awayScore" class="scores" val="away">--</div>
+            <b id="homeTitle" class="title" style="left: 10%; color: #2196F3">Home</b>
+            <b id="awayTitle" class="title" style="right: 10%; color: #F44236;">Away</b>
+            <div id="menuHolder">
+                <button id="resetBtn" class="menuBtns" style="background-image: url(./assets/reset.svg);" hidden></button>
+                <button id="serviceBtn" class="menuBtns" style="background-image: url(./assets/start.svg);"></button>
+                <button id="soundBtn" class="menuBtns" style="background-image: url(./assets/sound.svg);" hidden></button>
+                <button id="muteBtn" class="menuBtns" style="background-image: url(./assets/mute.svg);" hidden></button>
+            </div>
+        </div>
+        <div id="msg"></div>
+    </body>
+    <script src="./code.js"></script>
+</html>
